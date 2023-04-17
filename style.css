@@ -1,0 +1,114 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+:root{ /*可全域使用的變數*/
+    --primary-dark-rgb: 0, 20, 31;
+    --primary-color-rgb: 0, 170, 255;
+    --primary-light-rgb: 209, 240, 255;
+    --success: 0, 255, 0;
+    --error: 255, 0, 0;
+}
+
+.full_screen_container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./BG2.JPG);
+    background-size: cover;
+    background-position: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+.login_container {
+    /* height: 200px; */
+    width: 80%;
+    max-width: 600px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    --color: rgb(var(--primary-dark-rgb), 0.5);
+    background-color: var(--color);
+    box-shadow: 0 0 15px 0 var(--color);
+    position: absolute;
+    left: 50vw;
+    top: 50vh; 
+    transform: translate(-50%, -50%);
+}
+.login_title {
+    color: #FFF;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: normal;
+}
+.login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /*間距*/
+    /* line-height: 10px; *//*行距*/
+    margin-top: 40px;
+}
+.input_group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.input_group label {
+    color:#FFF;
+    font-weight: lighter;
+}
+.input_group input {
+    font-size: 1.25rem;
+    padding: 0.5em;
+    font-weight: lighter;
+    border-radius: 5px;
+    background-color: rgb(var(--primary-light-rgb), 0.3);
+    border: none;
+    outline: none;
+    color:#FFF;
+}
+.success input {
+    box-shadow: 0 0 0 1px rgb(var(--success)); 
+}
+.error input {
+    box-shadow: 0 0 0 1px rgb(var(--error)); 
+}
+.input_group input:focus {
+    box-shadow: 0 0 0 1px rgb(var(--primary-light-rgb)); 
+    /*為什麼不用border做出一樣效果？因為border是有占空間的，所以focus時多出邊線整個畫面會被變動*/
+}
+.input_group .msg {
+    display: none;
+    font-size: 0.75rem; 
+}
+.success .msg, .error .msg {     /*遇到相同的程式可以抓出來寫在一起，後續修改只要改一次就好，避免漏掉*/
+    display: block;
+}
+.success .msg {
+    color: rgb(var(--success));
+} 
+.error .msg {
+    color: rgb(var(--error));
+}
+.login_button {
+    padding: 0.8em 1em;
+    color: #FFF;
+    font-size: 1.5 rem;
+    font-weight: lighter;
+    background-color: rgb(var(--primary-color-rgb), 0.25);
+    border: 1px solid rgb(var(--primary-color-rgb));
+    border-radius: 0.25em;
+    outline: none;
+    cursor: pointer;
+}
+.login_button:hover,
+.login_button:focus {
+    background-color: rgb(var(--primary-color-rgb), 0.4);
+}
+
