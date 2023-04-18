@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .login_form_input {
+        @apply 
+        p-2
+        rounded
+        bg-primary-light/30
+        border-none
+        outline-none
+        font-light
+        text-white
+        text-xl
+    }
+    .input_group {
+        @apply
+        flex
+        flex-col
+        gap-2
+    }
+    .login_form_input:focus {
+        @apply
+        shadow-line
+        shadow-primary-light
+    }
+
+    
+}
