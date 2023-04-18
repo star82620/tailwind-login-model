@@ -39,7 +39,8 @@ html,body {
     position: absolute;
     left: 50vw;
     top: 50vh; 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+    /* 為什麼還要多做 translate?? */
 }
 .login_title {
     color: #FFF;

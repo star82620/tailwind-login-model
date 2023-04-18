@@ -6,24 +6,61 @@
   <link href="/public/output.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-3xl text-red-500 font-bold underline">
-    Hello world!
-  </h1>
-  <div class="full_screen_container text-red-500 bg-slate-500" style="border: 1px solid #ccc; ">
-    <div class="login_container w-3/4" style="">
-        <div class="login_title">Welcome</div>
-        <form action="" class="login_form">
+  <div class="full_screen_container
+              w-screen h-screen 
+              relative
+              bg-full-page-image
+              bg-cover
+              bg-center 
+              ">
+    <div class="login_container 
+                w-640px
+                px-10 py-10 
+                absolute left-1/2 top-1/2 
+                -translate-x-1/2
+                -translate-y-1/2
+                rounded-2xl
+                bg-primary-dark/50
+                shadow-lg
+                shadow-primary-dark
+                ">
+        <div class="login_title 
+                  text-white
+                  text-4xl
+                  text-center
+                  font-normal        
+                  ">Welcome</div>
+        <form action="" class="login_form 
+                              flex
+                              flex-col
+                              gap-5
+                              mt-10
+                              text-white
+                              font-light
+                              ">
             <div class="input_group success">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="email">
-                <span class="msg">Valid email</span>
+                <input type="email" name="email" id="email" class="email login_form_input">
+                <span class="msg hidden text-xs">Valid email</span>
             </div>
             <div class="input_group error">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-                <span class="msg">Incorrect password</span>
+                <input type="password" name="password" id="password" class="login_form_input">
+                <span class="msg hidden text-xs">Incorrect password</span>
             </div>
-            <button class="login_button" type="submit">Login</button>
+            <button class="login_button
+                            px-3
+                            py-4
+                            rounded-md
+                            outline-none
+                            cursor-pointer
+                            bg-primary-color/25
+                            border-2
+                            border-primary-color
+                            text-white
+                            font-light
+            
+            " type="submit">Login</button>
         </form>
     </div>
 </div>
