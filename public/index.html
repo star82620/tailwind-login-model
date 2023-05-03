@@ -1,68 +1,65 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/public/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/public/output.css" rel="stylesheet">
 </head>
 <body>
-  <div class="full_screen_container
-              w-screen h-screen 
-              relative
-              bg-full-page-image
-              bg-cover
-              bg-center 
-              ">
-    <div class="login_container 
-                w-640px
-                px-10 py-10 
-                absolute left-1/2 top-1/2 
-                -translate-x-1/2
-                -translate-y-1/2
-                rounded-2xl
-                bg-primary-dark/50
-                shadow-lg
-                shadow-primary-dark
+    <div class="full_screen_container
+                h-screen
+                bg-full-page-image
+                bg-cover
                 ">
-        <div class="login_title 
-                  text-white
-                  text-4xl
-                  text-center
-                  font-normal        
-                  ">Welcome</div>
-        <form action="" class="login_form 
-                              flex
-                              flex-col
-                              gap-5
-                              mt-10
-                              text-white
-                              font-light
-                              ">
-            <div class="input_group success">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="email login_form_input">
-                <span class="msg hidden text-xs">Valid email</span>
-            </div>
-            <div class="input_group error">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" class="login_form_input">
-                <span class="msg hidden text-xs">Incorrect password</span>
-            </div>
-            <button class="login_button
-                            px-3
-                            py-4
-                            rounded-md
-                            outline-none
-                            cursor-pointer
-                            bg-primary-color/25
-                            border-2
-                            border-primary-color
-                            text-white
-                            font-light
-            
-            " type="submit">Login</button>
-        </form>
-    </div>
-</div>
+        <div class="login_container 
+                    w-640px
+                    px-10 py-10 
+                    absolute left-1/2 top-1/2 
+                    -translate-x-1/2
+                    -translate-y-1/2
+                    rounded-2xl
+                    shadow-lg
+                    shadow-primary-dark
+                    bg-primary-dark/50
+                    ">
+            <div class="login_title 
+                        text-white
+                        text-4xl
+                        text-center
+                        font-normal        
+                        ">Welcome</div>
+            <form action="" class="login_form 
+                                    flex
+                                    flex-col
+                                    gap-5
+                                    mt-10
+                                    text-white
+                                    font-light
+                                    ">
+                <div class="input_group success">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="email login_form_input">
+                    <span class="msg hidden text-xs">Valid email</span>
+                </div>
+                <div class="input_group error">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="login_form_input">
+                    <span class="msg hidden text-xs">Incorrect password</span>
+                </div>
+                <button class="login_button
+                                px-3
+                                py-4
+                                rounded-md
+                                outline-none
+                                cursor-pointer
+                                bg-primary-color/25
+                                border-2
+                                border-primary-color
+                                text-white
+                                font-light
+                                " type="submit">Login</button>
+            </form>
+        </div>
+    </div>  
 </body>
 </html>
